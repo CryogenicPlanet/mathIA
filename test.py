@@ -9,6 +9,8 @@ allCases = 0
 valuesOfO = list(range(65,92))
 #print(valuesOfO)
 count = 0
+print("count:")
+print(count)
 def recursive(h,count):
     print("newRecursive")
     try:
@@ -57,11 +59,7 @@ def recursive(h,count):
                       recursive(newH,count)
     except:
         random = False       
-for o in valuesOfO:
-    h3 = 110 - o
-    print(h3)
-    count = 0
-    recursive(h3)
-print(trueCases)
-print(allCases)
+recursive(45,count)
+#print(trueCases)
+#print(allCases)
     
