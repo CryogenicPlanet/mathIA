@@ -49,3 +49,6 @@ for testcase in keywords:
     #print(len(keywords))
     #print(trueForSha)
 print(mean(probabilty))
+import numpy
+a = numpy.asarray(probabilty) 
+numpy.savetxt("probabilty.csv", a, delimiter=",")
