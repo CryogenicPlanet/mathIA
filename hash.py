@@ -28,7 +28,7 @@ for a in valuesOfO:
     for b in valuesOfO:
         for c in valuesOfO:
             for d in valuesOfO:
-                    message = list([a],[b],[c],[d])
+                    message = [a,b,c,d]
                     output = hash8(message,example_table)
 print(trueCases)
-print(allCases)
+print(all)
