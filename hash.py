@@ -31,4 +31,4 @@ for a in valuesOfO:
                     message = [a,b,c,d]
                     output = hash8(message,example_table)
 print(trueCases)
-print(all)
+print(allCases)
