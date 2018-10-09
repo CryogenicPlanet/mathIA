@@ -38,9 +38,9 @@ def recursive(h,count):
                   newH = x - o
                   #print(newH)
                   if count == 3:
-                      print("Count is 3")
+                      #print("Count is 3")
                       if newH == 4:
-                          print("True")
+                          #print("True")
                           trueCases = trueCases +1
                           allCases = allCases +1
                       else:
@@ -52,7 +52,7 @@ def recursive(h,count):
             for o in valuesOfO:
                   newH = (x+256) - o
                   if count == 3:
-                      print("Count is 3")
+                      #print("Count is 3")
                       if newH == 4:
                           allCases = allCases +1
                           trueCases = trueCases +1
