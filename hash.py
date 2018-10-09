@@ -1,6 +1,6 @@
 from random import shuffle
 import hashlib
-from statistics
+import statistics
 
 #example_table = list(range(0, 256))
 #shuffle(example_table)
