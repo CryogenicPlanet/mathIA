@@ -30,11 +30,14 @@ def hash8(message, table):
 
 from itertools import product
 from string import ascii_uppercase
-userInput = input("Enter 4 Letter Word : ")
+#userInput = input("Enter 4 Letter Word : ")
 
 keywords = [''.join(i) for i in product(ascii_uppercase, repeat = 4)]
+number = 0
 for testcase in keywords:
     correctHash = hash8(testcase,example_table)
+    number = number + 1
+    print(number)
     for word in keywords:
         output = hash8(word,example_table)
         #byte = bytes(word,encoding='utf-8')
