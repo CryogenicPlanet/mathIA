@@ -26,7 +26,7 @@ def hash8(message, table):
     return hashed
 from itertools import product
 from string import ascii_uppercase
-keywords = [''.join(i) for i in product(ascii_uppercase, repeat = 20)]
+keywords = [''.join(i) for i in product(ascii_uppercase, repeat = 10)]
 for word in keywords:
     output = hash8(word,example_table)
     byte = bytes(word,encoding='utf-8')
