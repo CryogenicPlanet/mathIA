@@ -71,7 +71,7 @@ def recursive(h,count):
         except:
             random = False       
 for o in valuesOfO:
-    h3 = 110 - o
+    h3 = postion1 - o
     #print(h3)
     count = 0
     recursive(h3,count)

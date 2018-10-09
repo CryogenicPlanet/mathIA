@@ -13,5 +13,5 @@ import numpy
 a = numpy.asarray(example_table) 
 numpy.savetxt("foo.csv", a, delimiter=",")
 while True:
-    postion = int(input("Enter table postion : "))
-    print(example_table[postion])
+    postion = int(input("Enter table value : "))
+    print(example_table.index(postion))
