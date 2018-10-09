@@ -1,3 +1,4 @@
+f= open("log.txt","w+")
 
 #for word math
 h4 = 38
@@ -9,19 +10,21 @@ allCases = 0
 valuesOfO = list(range(65,92))
 #print(valuesOfO)
 count = 0
-print("count:")
-print(count)
+
 def recursive(h,count):
     global trueCases
     global allCases
-    print("newRecursive")
+    if h < 0:
+        allCases = allCases +1
     try:
        x = table.index(h)
        print(x)
        if (x+256) > 347:
               for o in valuesOfO:
                   newH = x - o
+                  print("newH: ")
                   print(newH)
+                  print("count:")
                   print(count)
                   if count == 3:
                       if newH == 4:
@@ -36,6 +39,7 @@ def recursive(h,count):
        else:
             for o in valuesOfO:
                   newH = x - o
+                  print("newH: ")
                   print(newH)
                   if count == 3:
                       if newH == 4:
@@ -49,6 +53,8 @@ def recursive(h,count):
                       recursive(newH,count)
             for o in valuesOfO:
                   newH = (x+256) - o
+                  print("newH: ")
+                  print(newH)
                   if count == 3:
                       if newH == 4:
                           allCases = allCases +1
@@ -64,4 +70,4 @@ def recursive(h,count):
 recursive(45,count)
 print(trueCases)
 print(allCases)
-    
+

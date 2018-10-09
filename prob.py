@@ -12,6 +12,8 @@ count = 0
 def recursive(h,count):
     global trueCases
     global allCases
+    if h < 0:
+        allCases = allCases +1
     #print("newRecursive")
     try:
        x = table.index(h)
