@@ -12,6 +12,8 @@ count = 0
 print("count:")
 print(count)
 def recursive(h,count):
+    global trueCases
+    global allCases
     print("newRecursive")
     try:
        x = table.index(h)
@@ -60,6 +62,6 @@ def recursive(h,count):
     except:
         random = False       
 recursive(45,count)
-#print(trueCases)
-#print(allCases)
+print(trueCases)
+print(allCases)
     

@@ -10,17 +10,21 @@ valuesOfO = list(range(65,92))
 #print(valuesOfO)
 count = 0
 def recursive(h,count):
-    print("newRecursive")
+    global trueCases
+    global allCases
+    #print("newRecursive")
     try:
        x = table.index(h)
-       print(x)
+       #print(x)
        if (x+256) > 347:
               for o in valuesOfO:
                   newH = x - o
-                  print(newH)
-                  print(count)
+                  #print(newH)
+                  #print(count)
                   if count == 3:
+                      #print("Count is 3")
                       if newH == 4:
+                          #print("True")
                           trueCases = trueCases +1
                           allCases = allCases +1
                       else:
@@ -32,9 +36,11 @@ def recursive(h,count):
        else:
             for o in valuesOfO:
                   newH = x - o
-                  print(newH)
+                  #print(newH)
                   if count == 3:
+                      print("Count is 3")
                       if newH == 4:
+                          print("True")
                           trueCases = trueCases +1
                           allCases = allCases +1
                       else:
@@ -46,6 +52,7 @@ def recursive(h,count):
             for o in valuesOfO:
                   newH = (x+256) - o
                   if count == 3:
+                      print("Count is 3")
                       if newH == 4:
                           allCases = allCases +1
                           trueCases = trueCases +1
@@ -59,7 +66,7 @@ def recursive(h,count):
         random = False       
 for o in valuesOfO:
     h3 = 110 - o
-    print(h3)
+    #print(h3)
     count = 0
     recursive(h3,count)
 print(trueCases)
