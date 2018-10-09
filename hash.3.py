@@ -34,7 +34,7 @@ from string import ascii_uppercase
 
 keywords = [''.join(i) for i in product(ascii_uppercase, repeat = 4)]
 number = 0
-for x in range((2*(len(keywords)))/8,(3*(len(keywords))/8)):
+for x in range(round((2*(len(keywords)))/8),round(3*(len(keywords))/8)):
     correctHash = hash8(keywords[x],example_table)
     number = number + 1
     print(number)
