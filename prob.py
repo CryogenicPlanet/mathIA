@@ -61,7 +61,7 @@ for o in valuesOfO:
     h3 = 110 - o
     print(h3)
     count = 0
-    recursive(h3)
+    recursive(h3,count)
 print(trueCases)
 print(allCases)
     
