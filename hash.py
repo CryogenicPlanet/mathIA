@@ -1,6 +1,6 @@
 from random import shuffle
 import hashlib
-import statistics
+from statistics import mean
 
 #example_table = list(range(0, 256))
 #shuffle(example_table)
@@ -42,7 +42,7 @@ for testcase in keywords:
         #if temp == correctHashSha:
             #trueForSha = trueForSha + 1
     probabilty.append((trueCases/len(keywords)))
-    print(trueCases)
-    print(len(keywords))
+    #print(trueCases)
+    #print(len(keywords))
     #print(trueForSha)
-print(probabilty.mean())
+print(mean(probabilty))
