@@ -26,3 +26,4 @@ keywords = [''.join(i) for i in product(ascii_uppercase, repeat = 4)]
 for word in keywords:
     output = hash8(word,example_table)
 print(trueCases)
+print(len(keywords))
