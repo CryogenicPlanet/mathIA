@@ -34,8 +34,8 @@ from string import ascii_uppercase
 
 keywords = [''.join(i) for i in product(ascii_uppercase, repeat = 4)]
 number = 0
-for testcase in keywords:
-    correctHash = hash8(testcase,example_table)
+for i in range(5):
+    correctHash = hash8(keywords[5],example_table)
     number = number + 1
     print(number)
     for word in keywords:
@@ -44,10 +44,10 @@ for testcase in keywords:
         #temp = hashlib.sha256(byte).hexdigest()
         #if temp == correctHashSha:
             #trueForSha = trueForSha + 1
-    probabilty.append((trueCases/len(keywords)))
-    #print(trueCases)
+    probabilty.append((trueCases/len(keywords)))    #print(trueCases)
     #print(len(keywords))
     #print(trueForSha)
+print(probabilty)
 print(mean(probabilty))
 import numpy
 a = numpy.asarray(probabilty) 
