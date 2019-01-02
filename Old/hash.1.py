@@ -34,21 +34,18 @@ from string import ascii_uppercase
 
 keywords = [''.join(i) for i in product(ascii_uppercase, repeat = 4)]
 number = 0
-for x in range(round((len(keywords))/8)):
-    correctHash = hash8(keywords[x],example_table)
-    number = number + 1
-    print(number)
-    for word in keywords:
-        output = hash8(word,example_table)
+for word in keywords:
+    output = hash8(word,example_table)
         #byte = bytes(word,encoding='utf-8')
         #temp = hashlib.sha256(byte).hexdigest()
         #if temp == correctHashSha:
             #trueForSha = trueForSha + 1
-    probabilty.append((trueCases/len(keywords)))
+probabilty.append((trueCases/len(keywords)))
     #print(trueCases)
     #print(len(keywords))
     #print(trueForSha)
-print(mean(probabilty))
+print(trueCases)
+print(probabilty)
 import numpy
 a = numpy.asarray(probabilty) 
-numpy.savetxt("probabilty.1.csv", a, delimiter=",")
+numpy.savetxt("math-186.csv", a, delimiter=",")
