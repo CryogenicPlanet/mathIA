@@ -24,13 +24,13 @@ from itertools import product
 from string import ascii_uppercase
 #userInput = input("Enter 4 Letter Word : ")
 keySet = []
-for i in range(3,7):
+for i in range(3,6):
     keywords = [''.join(i) for i in product(ascii_uppercase, repeat = i)]
     keySet.append(keywords)
 #print(len(keywords))
 testWords = ["BAT","MATH","MATHS","CHANCE"]
 number = 0
-for i in range(4):
+for i in range(3):
     print("Word : ")
     word = testWords[i]
     print(word)

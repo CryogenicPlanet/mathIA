@@ -50,6 +50,9 @@ for table in tables:
     print("Size : ")
     print(len(table))
     correctHash = hash8("MATH",table,len(table))
+    print("Value of Math: ")
+    print(correctHash)
+    print("Collisions :")
     trueCases = 0
     for word in keywords:
         output = hash8(word,table,len(table))
